@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Joy Guest House</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" alt="New Joy Guest House Logo" class="logo">
+            <ul>
+                <li><a href="#" id="book-room-link">Book a Room</a></li>
+                <li><a href="room-availability.html">Room Availability</a></li>
+                <li><a href="stored-data.html">Stored Data</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="form-section">
+            <h2>Book a Room</h2>
+            <form id="booking-form">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" required><br><br>
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" required><br><br>
+                <label for="id-number">ID Number:</label>
+                <input type="" id="id-number" required><br><br>
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" required><br><br>
+                <label for="amount-to-pay">Amount to Pay:</label>
+                <input type="number" id="amount-to-pay" value="1000" readonly><br><br>
+                <label for="number-of-nights">Number of Nights:</label>
+                <input type="number" id="number-of-nights" required><br><br>
+                <label for="room-number">Room Number:</label>
+                <select id="room-number" required>
+                    <option value="">Select a Room</option>
+                    <option value="1">Room 1</option>
+                    <option value="2">Room 2</option>
+                    <option value="3">Room 3</option>
+                    <option value="4">Room 4</option>
+                    <option value="5">Room 5</option>
+                    <option value="6">Room 6</option>
+                    <option value="7">Room 7</option>
+                    <option value="8">Room 8</option>
+                    <option value="9">Room 9</option>
+                </select><br><br>
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" required>
+                    <option value="">Select a Payment Method</option>
+                    <option value="M-Pesa">M-Pesa</option>
+                    <option value="Cash">Cash</option>
+                </select><br><br>
+                <button id="book-room">Book A Room</button>
+            </form>
+        </section>
+        
+        <section id="checkout-section" style="display: none;">
+            <h2>Checkout</h2>
+            <div id="personal-details"></div>
+            <form id="checkout-form">
+                <h3>Payment Details:</h3>
+                <label for="amount-paid">Amount Paid:</label>
+                <input type="number" id="amount-paid" required><br><br>
+                <label for="transaction-number">Transaction Number:</label>
+                <input type="text" id="transaction-number" required><br><br>
+                <h3>Total Amount to Pay: </h3>
+                <p id="total-amount"></p>
+                <button id="checkout-button" type="button">Checkout</button>
+            </form>
+        </section>
+        
+        <section id="payment-confirmation" style="display: none;">
+            <h2>Payment Confirmation</h2>
+            <p id="payment-confirmation-details"></p>
+        </section>
+        
+              
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

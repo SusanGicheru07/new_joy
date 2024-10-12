@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stored Data</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stored-data.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" alt="New Joy Guest House Logo" class="logo">
+            <ul>
+                <li><a href="index.html">Book a Room</a></li>
+                <li><a href="room-availability.html">Room Availability</a></li>
+                <li><a href="#stored-data">Stored Data</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="stored-data-container">
+            <h2>Stored Data</h2>
+            <div class="table-container">
+                <table id="stored-data-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>ID Number</th>
+                            <th>Phone Number</th>
+                            <th>Amount to Pay</th>
+                            <th>Number of Nights</th>
+                            <th>Room Number</th>
+                            <th>Payment Method</th>
+                            <th>Transaction Number</th>
+                            <th>Cash Amount</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody id="stored-data-list">
+                        <!-- dynamically generated list of stored data -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="stored-data.js"></script>
+</body>
+</html>

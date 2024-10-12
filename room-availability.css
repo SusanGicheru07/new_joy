@@ -1,0 +1,75 @@
+#availability-forms-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.availability-form {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.availability-form h3 {
+    margin-top: 0;
+    color: #04403f;
+    border-bottom: 1px solid #04403f;
+    padding-bottom: 5px;
+}
+
+.room-status {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.room-number {
+    flex: 0 0 100px;
+    font-weight: bold;
+}
+
+.status-options {
+    display: flex;
+    gap: 20px;
+}
+
+.status-option {
+    display: flex;
+    align-items: center;
+}
+
+.status-option input[type="radio"] {
+    margin-right: 5px;
+}
+
+@media (max-width: 1200px) {
+    #availability-forms-container {
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    #availability-forms-container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 600px) {
+    .room-status {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .room-number {
+        margin-bottom: 10px;
+    }
+
+    .status-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
